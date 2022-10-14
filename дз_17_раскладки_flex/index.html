@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Flexbox раскладки</h1>
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>justify-content: center;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-1">
+                <div class="strip">.box</div>
+                <div class="block">block-1</div>
+                <div class="block">block-2</div>
+                <div class="block">block-3</div>
+                <div class="block">block-4</div>
+            </div>
+        </div>
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>align-items: flex-end;</li>
+                <li>justify-content: center;</li>
+            </ul>
+            <span>}</span>
+            <p></p>
+            <span>.block-1 {</span>
+            <ul>
+                <li>align-self: flex-start;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-1">
+                <div class="strip">.box</div>
+                <div class="block block-1">block-1</div>
+                <div class="block">block-2</div>
+                <div class="block block-3">block-3</div>
+                <div class="block">block-4</div>
+            </div>
+        </div>
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>justify-content: space-between;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-2">
+                <div class="strip">.box</div>
+                <div class="block">block-1</div>
+                <div class="block">block-2</div>
+                <div class="block">block-3</div>
+                <div class="block">block-4</div>
+            </div>
+        </div>
+
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>flex-direction: row-reverse;</li>
+                <li>justify-content: space-between;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-2 box-2_reverse">
+                <div class="strip">.box</div>
+                <div class="block">block-1</div>
+                <div class="block">block-2</div>
+                <div class="block">block-3</div>
+                <div class="block">block-4</div>
+            </div>
+        </div>
+
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>justify-content: space-around;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-3">
+                <div class="strip">.box</div>
+                <div class="block">block-1</div>
+                <div class="block">block-2</div>
+                <div class="block">block-3</div>
+                <div class="block">block-4</div>
+            </div>
+        </div>
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>align-items: center;</li>
+                <li>justify-content: space-evently;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-4">
+                <div class="strip">.box</div>
+                <div class="block">block-1</div>
+                <div class="block">block-2</div>
+                <div class="block">block-3</div>
+                <div class="block">block-4</div>
+            </div>
+        </div>
+
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>align-items: center;</li>
+                <li>justify-content: space-evently;</li>
+            </ul>
+            <span>}</span>
+            <p></p>
+            <span>.block-2 {</span>
+            <ul>
+                <li>order: 1;</li>
+            </ul>
+            <span>}</span>
+            <p></p>
+            <span>.block-2 {</span>
+            <ul>
+                <li>order: -1;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-4">
+                <div class="strip">.box</div>
+                <div class="block block-1">block-1</div>
+                <div class="block block-2">block-2</div>
+                <div class="block block-3">block-3</div>
+                <div class="block block-4">block-4</div>
+            </div>
+        </div>
+
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>align-items: center;</li>
+                <li>flex-direction: column;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-5">
+                <div class="strip">.box</div>
+                <div class="block">block-1</div>
+                <div class="block">block-2</div>
+                <div class="block">block-3</div>
+                <div class="block">block-4</div>
+            </div>
+        </div>
+
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>align-items: center;</li>
+                <li>flex-direction: column-reverse;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-5 box-5_reverse">
+                <div class="strip">.box</div>
+                <div class="block">block-1</div>
+                <div class="block">block-2</div>
+                <div class="block">block-3</div>
+                <div class="block">block-4</div>
+            </div>
+        </div>
+
+        <div class="empty"></div>
+        <div class="wrapper">
+            <span>.box {</span>
+            <ul>
+                <li>display: flex;</li>
+                <li>align-items: center;</li>
+                <li>flex-wrap: wrap;</li>
+                <li>flex-direction: column-reverse;</li>
+            </ul>
+            <span>}</span>
+            <div class="box box-6">
+                <div class="strip">.box</div>
+                <div class="block">block-1</div>
+                <div class="block">block-2</div>
+                <div class="block">block-3</div>
+                <div class="block">block-4</div>
+            </div>
+        </div>
+
+        <div class="empty"></div>
+        <div class="flexbox">
+            <div class="wrapper">
+                <span>.box {</span>
+                <ul>
+                    <li>display: flex;</li>
+                    <li>align-items: center;</li>
+                    <li>flex-wrap: wrap;</li>
+                    <li>flex-direction: row;</li>
+                </ul>
+                <span>}</span>
+                <div class="box box-7">
+                    <div class="strip">.box</div>
+                    <div class="block">block-1</div>
+                    <div class="block">block-2</div>
+                    <div class="block">block-3</div>
+                    <div class="block">block-4</div>
+                </div>
+            </div>
+            
+            <div class="wrapper">
+                <span>.box {</span>
+                <ul>
+                    <li>display: flex;</li>
+                    <li>align-items: center;</li>
+                    <li>flex-wrap: wrap-reverse;</li>
+                    <li>flex-direction: row;</li>
+                </ul>
+                <span>}</span>
+                <div class="box box-7 box-7_reverse">
+                    <div class="strip">.box</div>
+                    <div class="block">block-1</div>
+                    <div class="block">block-2</div>
+                    <div class="block">block-3</div>
+                    <div class="block">block-4</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
